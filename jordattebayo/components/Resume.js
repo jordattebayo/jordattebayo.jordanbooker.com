@@ -17,7 +17,7 @@ export default function Resume() {
             <li>Generate new business using a variety of prospecting tools</li>
             <li>
               Schedule appointments, prepare presentations, proposals,
-              demonstrate equipment Develop solutions that demonstrate value
+              demonstrate equipment, and develop solutions that demonstrate value
               added benefits to customers
             </li>
             <li>
