@@ -7,7 +7,7 @@ import styles from "./layout.module.css";
 export default function Layout(props) {
   return (
     <div className={styles.container}>
-      <Head className={styles.header}>
+      <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&display=swap"
           rel="stylesheet"

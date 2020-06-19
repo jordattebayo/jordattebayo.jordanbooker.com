@@ -1,0 +1,84 @@
+.mainB {
+  grid-area: main;
+}
+
+.mainContainer {
+  margin: 0 10%;
+  margin-bottom: 25px;
+}
+
+.introText {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 130px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -6.5px;
+  line-height: 130px;
+  text-transform: none;
+  color: #f5dd42;
+  margin-top: 25px;
+}
+
+.introContainer {
+  margin: auto;
+}
+
+.text {
+  font-family: Esteban, Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-transform: none;
+  color: #2d2d2d;
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.contactBtn {
+  background-color: #f5dd42;
+  color: #2d2d2d;
+  font-weight: bold;
+  border: 1px solid #f5dd42;
+  width: 120px;
+  height: 40px;
+  float: right;
+  margin: 0 15% 40px auto;
+}
+
+.contactBtn:hover span {
+  display: none;
+}
+
+.contactBtn:hover {
+  background-color: #fff;
+  border: 1px solid #f5dd42;
+}
+
+.contactBtn:hover:after {
+  font-family: Esteban, Georgia, "Times New Roman", serif;
+  color: #2d2d2d;
+  font-weight: 400;
+  content: "Contact";
+  letter-spacing: -1px;
+  font-size: 1.5em;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 680px) {
+  .introText {
+    font-size: 65px;
+    letter-spacing: -3.5px;
+    line-height: 65px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,118 @@
+.nav {
+  grid-area: nav;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  float: right;
+  background-color: transparent;
+}
+
+.navLinkContainer {
+  display: block;
+  color: #2d2d2d;
+  list-style: none;
+}
+
+.navLinkHome {
+  border: 1px solid #2d2d2d;
+  background-color: #2d2d2d;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  height: 42px;
+  width: 100%;
+  float: right;
+  margin-bottom: -1px;
+  padding-top: 16px;
+}
+
+.navLinkAbout {
+  border: 1px solid #2d2d2d;
+  background-color: #2d2d2d;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  height: 42px;
+  width: 80%;
+  float: right;
+  margin-bottom: -1px;
+  padding-top: 16px;
+}
+
+.navLinkGit {
+  border: 1px solid #2d2d2d;
+  background-color: #2d2d2d;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  height: 42px;
+  float: right;
+  width: 60%;
+  margin-bottom: -1px;
+  padding-top: 16px;
+}
+
+.navLinkHome:hover span {
+  display: none;
+}
+
+.navLinkAbout:hover span {
+  display: none;
+}
+
+.navLinkGit:hover span {
+  display: none;
+}
+
+.navLinkHome:hover:before {
+  content: "Home";
+  height: 60px;
+  letter-spacing: -1px;
+  padding-top: 16px;
+}
+
+.navLinkAbout:hover:before {
+  content: "About";
+  height: 60px;
+  letter-spacing: -1px;
+  padding-top: 16px;
+}
+
+.navLinkGit:hover:before {
+  content: "GitHub";
+  height: 60px;
+  letter-spacing: -1px;
+  padding-top: 16px;
+}
+
+@media only screen and (max-width: 680px) {
+  .navContainer {
+    width: 50%;
+  }
+
+  .navLinkHome {
+    font-size: 1em;
+    height: 24px;
+    padding-top: 6px;
+  }
+
+  .navLinkAbout {
+    font-size: 1em;
+    height: 24px;
+    padding-top: 6px;
+  }
+
+  .navLinkGit {
+    font-size: 1em;
+    height: 24px;
+    padding-top: 6px;
+  }
+}

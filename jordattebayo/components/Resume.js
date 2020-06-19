@@ -1,24 +1,33 @@
+import styles from "./resume.module.css";
+
 export default function Resume() {
   return (
-    <div className="container">
-      <div className="res_hd">
-        <h2>Resume</h2>
-        <p>
+    <div className={styles.resumeContainer}>
+      <div className={styles.ltContainer}>
+        <div className={styles.ltShape60}></div>
+        <div className={styles.ltShape80}></div>
+        <div className={styles.ltShape100}></div>
+      </div>
+      <div className={styles.resTitle}>
+        <h2 className={styles.resTitleText}>Resumè</h2>
+        <p className={styles.resMis}>
           Hardworking, motivated, and creative Front End Developer with a client
           focus.
         </p>
       </div>
-      <div className="res_main">
-        <h4>Experience</h4>
-        <div className="xp">
-          <span>DECEMBER 2019 – MARCH 2020</span>
-          <h6>IT SALES CONSULTANT, CEI THE DIGITAL OFFICE, DURHAM, NC</h6>
-          <ul>
+      <div className={styles.resMain}>
+        <h4 className={styles.resHd}>Experience</h4>
+        <div>
+          <span className={styles.resDate}>DECEMBER 2019 – MARCH 2020</span>
+          <h6 className={styles.resLgText}>
+            IT SALES CONSULTANT, CEI THE DIGITAL OFFICE, DURHAM, NC
+          </h6>
+          <ul className={styles.resText}>
             <li>Generate new business using a variety of prospecting tools</li>
             <li>
               Schedule appointments, prepare presentations, proposals,
-              demonstrate equipment, and develop solutions that demonstrate value
-              added benefits to customers
+              demonstrate equipment, and develop solutions that demonstrate
+              value added benefits to customers
             </li>
             <li>
               Identify and properly qualify potential prospects and customers
@@ -31,9 +40,11 @@ export default function Resume() {
           </ul>
         </div>
         <div className="xp">
-          <span>FEBRUARY 2018 – SEPTEMBER 2019</span>
-          <h6>FIELD SALES MANAGER, PACIFIC OFFICE AUTOMATION, SEATTLE, WA</h6>
-          <ul>
+          <span className={styles.resDate}>FEBRUARY 2018 – SEPTEMBER 2019</span>
+          <h6 className={styles.resLgText}>
+            FIELD SALES MANAGER, PACIFIC OFFICE AUTOMATION, SEATTLE, WA
+          </h6>
+          <ul className={styles.resText}>
             <li>Promoted to Sales Manager in less than 1 year. </li>
             <li>
               Developed a territory in a start-up branch within a mature market
@@ -51,28 +62,30 @@ export default function Resume() {
           </ul>
         </div>
         <div>
-          <h4>Education</h4>
-          <h6>Front End Developer, Udacity</h6>
-          <p>June 2020</p>
-          <p>Certificate awarded</p>
-          <h6>BUSINESS ADMINISTRATION, UNC GREENSBORO</h6>
-          <p>DECEMBER 2012</p>
-          <p>
-            Bachelor of Science in Business Administration with a concentration
-            in entrepreneurship
+          <h4 className={styles.resHd}>Education</h4>
+          <p className={styles.resDate}>June 2020</p>
+          <h6 className={styles.resLgText}>Front End Developer, Udacity</h6>
+          <p className={styles.resText}>- Pending Certificate</p>
+          <p className={styles.resDate}>DECEMBER 2012</p>
+          <h6 className={styles.resLgText}>
+            BUSINESS ADMINISTRATION, UNC GREENSBORO
+          </h6>
+          <p className={styles.resText}>
+            - Bachelor of Science in Business Administration with a
+            concentration in entrepreneurship
           </p>
         </div>
         <div>
-          <h4>Activities</h4>
-          <p>
-            Outdoor adventuring such as hiking, camping, and cycling. Traveling.
-            Playing guitar and making music. Photography.{" "}
+          <h4 className={styles.resHd}>Activities</h4>
+          <p className={styles.resText}>
+            - Outdoor adventuring such as hiking, camping, and cycling.
+            Traveling. Playing guitar and making music. Photography.{" "}
           </p>
         </div>
-        <h4>Awards</h4>
-        <h6>EAGLE SCOUT/ BOY SCOUTS OF AMERICA</h6>
-        <p>July 2008</p>
-        <p>Attained Rank of Eagle in scouting.</p>
+        <h4 className={styles.resHd}>Awards</h4>
+        <p className={styles.resDate}>July 2008</p>
+        <h6 className={styles.resLgText}>EAGLE SCOUT/ BOY SCOUTS OF AMERICA</h6>
+        <p className={styles.resText}>- Attained rank of Eagle in scouting.</p>
       </div>
     </div>
   );
