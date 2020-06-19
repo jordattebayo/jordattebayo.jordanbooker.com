@@ -7,15 +7,12 @@ export default class Home extends Component {
     super(props);
 
     this.state = {
-      copySuccess: false,
+      buttonClicked: false,
     };
   }
 
-  copyCodeToClipboard = () => {
-    const el = this.textArea;
-    el.select();
-    document.execCommand("copy");
-    this.setState({ copySuccess: true });
+  showEmail = () => {
+    this.setState({ buttonClicked: true });
   };
 
   render() {
@@ -36,23 +33,14 @@ export default class Home extends Component {
               React, and NodeJS. For any questions at all feel free to reach out
               to me!
             </p>
-            {this.state.copySuccess ? (
-              <div className={styles.text}>Contact email copied!</div>
+            {this.state.buttonClicked ? (
+              <div className={styles.text}>Email: jordan@jordanbooker.com</div>
             ) : null}
           </div>
         </div>
-        <textarea
-          className={styles.hide}
-          ref={(textarea) => (this.textArea = textarea)}
-          value="jordan@jordanbooker.com"
-          readOnly
-        />
-        <button
-          className={styles.contactBtn}
-          onClick={() => this.copyCodeToClipboard()}
-        >
+        <button className={styles.contactBtn} onClick={() => this.showEmail()}>
           <a>
-            <span>⊂( ･∀･) 彡　=͟͟͞͞ ⌧</span>
+            <span>Contact</span>
           </a>
         </button>
         <Resume />

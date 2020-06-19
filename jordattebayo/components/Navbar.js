@@ -7,14 +7,14 @@ const Navbar = () => (
       <li className={styles.navLinkContainer}>
         <Link href="/">
           <a className={styles.navLinkHome}>
-            <span>⌂</span>
+            <span>Home</span>
           </a>
         </Link>
       </li>
       <li className={styles.navLinkContainer}>
         <Link href="/about">
           <a className={styles.navLinkAbout}>
-            <span>ヾ(⌐■_■)ノ♪</span>
+            <span>About</span>
           </a>
         </Link>
       </li>
@@ -24,7 +24,7 @@ const Navbar = () => (
           href="https://www.github.com/jordattebayo"
           target="_blank"
         >
-          <span>ฅ^•ﻌ•^ฅ</span>
+          <span>GitHub</span>
         </a>
       </li>
     </ul>

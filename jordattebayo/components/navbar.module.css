@@ -23,7 +23,7 @@
   background-color: #2d2d2d;
   color: #fff;
   display: block;
-  font-size: 1.5em;
+  font-size: 24px;
   text-align: center;
   height: 42px;
   width: 100%;
@@ -37,13 +37,13 @@
   background-color: #2d2d2d;
   color: #fff;
   display: block;
-  font-size: 1.5em;
+  font-size: 24px;
   text-align: center;
   height: 42px;
   width: 80%;
   float: right;
   margin-bottom: -1px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .navLinkGit {
@@ -51,13 +51,13 @@
   background-color: #2d2d2d;
   color: #fff;
   display: block;
-  font-size: 1.5em;
+  font-size: 24px;
   text-align: center;
   height: 42px;
   float: right;
   width: 60%;
   margin-bottom: -1px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .navLinkHome:hover span {
@@ -73,24 +73,24 @@
 }
 
 .navLinkHome:hover:before {
-  content: "Home";
+  content: "⌂";
   height: 60px;
   letter-spacing: -1px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .navLinkAbout:hover:before {
-  content: "About";
+  content: "ヾ(⌐■_■)ノ♪";
   height: 60px;
   letter-spacing: -1px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .navLinkGit:hover:before {
-  content: "GitHub";
+  content: "ฅ^•ﻌ•^ฅ";
   height: 60px;
   letter-spacing: -1px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 @media only screen and (max-width: 680px) {
