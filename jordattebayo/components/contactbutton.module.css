@@ -1,0 +1,37 @@
+.contactBtn {
+  background-color: #f5dd42;
+  color: #2d2d2d;
+  font-weight: bold;
+  border: 1px solid #f5dd42;
+  width: 120px;
+  height: 40px;
+  float: right;
+  margin: 0 15% 40px auto;
+}
+
+.contactBtn:hover span {
+  display: none;
+}
+
+.contactBtn:hover {
+  background-color: #fff;
+  border: 1px solid #f5dd42;
+}
+
+.contactBtn:hover:after {
+  font-family: Esteban, Georgia, "Times New Roman", serif;
+  color: #2d2d2d;
+  font-weight: 400;
+  content: "⊂( ･∀･) 彡　=͟͟͞͞ ⌧";
+  letter-spacing: -1px;
+  font-size: 1em;
+}
+
+.contactText {
+  text-align: center;
+  font-family: Esteban, Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+}

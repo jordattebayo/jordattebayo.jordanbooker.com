@@ -27,6 +27,11 @@ const Navbar = () => (
           <span>GitHub</span>
         </a>
       </li>
+      <li className={styles.navLinkContainer}>
+        <a className={styles.navLinkProjects} href="/projects">
+          <span>Projects</span>
+        </a>
+      </li>
     </ul>
     {/* <style jsx>{`
       html,
