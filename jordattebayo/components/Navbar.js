@@ -33,12 +33,6 @@ const Navbar = () => (
         </a>
       </li>
     </ul>
-    {/* <style jsx>{`
-      html,
-      a {
-        text-decoration: none;
-      }
-    `}</style> */}
   </nav>
 );
 

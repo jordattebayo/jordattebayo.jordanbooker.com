@@ -1,0 +1,9 @@
+.pContainer {
+  height: 100px;
+  width: 100px;
+}
+
+.pText {
+  font-size: 24px;
+  color: #fff;
+}

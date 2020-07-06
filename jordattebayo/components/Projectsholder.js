@@ -1,5 +1,7 @@
 import styles from "./projectsholder.module.css";
 import ContactButton from "./ContactButton";
+import ThemeShape from "./ThemeShape";
+import ProjectCard from "./ProjectCard";
 
 export default function Projectsholder() {
   return (
@@ -14,12 +16,9 @@ export default function Projectsholder() {
         </p>
         <ContactButton />
       </div>
-
-      <div className={styles.ltContainer}>
-        <div className={styles.ltShape40}></div>
-        <div className={styles.ltShape60}></div>
-        <div className={styles.ltShape80}></div>
-        <div className={styles.ltShape100}></div>
+      <ThemeShape />
+      <div className={styles.pCardContainer}>
+        <ProjectCard />
       </div>
     </main>
   );

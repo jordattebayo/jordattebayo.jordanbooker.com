@@ -1,4 +1,5 @@
 import styles from "./about.module.css";
+import ThemeShape from "./ThemeShape";
 
 export default function AboutPage() {
   return (
@@ -24,11 +25,7 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <div className={styles.ltContainer}>
-        <div className={styles.ltShape60}></div>
-        <div className={styles.ltShape80}></div>
-        <div className={styles.ltShape100}></div>
-      </div>
+      <ThemeShape />
     </main>
   );
 }

@@ -37,34 +37,6 @@
   max-width: 700px;
 }
 
-.ltContainer {
-  width: 30%;
-  height: 177px;
-  margin: -1px;
-}
-
-.ltShape60 {
-  background-color: #2d2d2d;
-  width: 60%;
-  height: 33%;
-  margin-bottom: -1px;
-}
-
-.ltShape80 {
-  background-color: #2d2d2d;
-  width: 80%;
-  height: 33%;
-  border: 1px solid #2d2d2d;
-  margin-bottom: -1px;
-}
-
-.ltShape100 {
-  background-color: #2d2d2d;
-  width: 100%;
-  height: 34%;
-  margin-bottom: -1px;
-}
-
 @media only screen and (max-width: 680px) {
   .introText {
     font-size: 65px;
@@ -75,10 +47,5 @@
   .text {
     font-size: 16px;
     line-height: 25px;
-  }
-
-  .ltContainer {
-    height: 93px;
-    width: 40%;
   }
 }

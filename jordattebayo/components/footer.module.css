@@ -1,12 +1,12 @@
 .footer {
   grid-area: footer;
-  height: 200px;
+  height: 150px;
   background-color: #2d2d2d;
 }
 
 .ftText {
   font-family: Esteban, Georgia, "Times New Roman", serif;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -14,4 +14,11 @@
   line-height: 20px;
   text-transform: none;
   color: #fff;
+}
+
+@media only screen and (max-width: 680px) {
+  .ftText {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

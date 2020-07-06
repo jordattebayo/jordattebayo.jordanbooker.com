@@ -1,13 +1,10 @@
 import styles from "./resume.module.css";
+import ThemeShape from "./ThemeShape";
 
 export default function Resume() {
   return (
     <div className={styles.resumeContainer}>
-      <div className={styles.ltContainer}>
-        <div className={styles.ltShape60}></div>
-        <div className={styles.ltShape80}></div>
-        <div className={styles.ltShape100}></div>
-      </div>
+      <ThemeShape />
       <div className={styles.resTitle}>
         <h2 className={styles.resTitleText}>Resumè</h2>
         <p className={styles.resMis}>
