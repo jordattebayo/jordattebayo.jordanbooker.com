@@ -1,122 +1,39 @@
 .resContainer {
-  width: 100%;
-}
-
-.resTitle {
-  padding: 50px 0px;
-  background-color: #2d2d2d;
-  color: #fff;
-}
-
-.resTitleText {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 65px;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: -1.5px;
-  line-height: 65px;
-  text-transform: none;
-  padding-bottom: 35px;
-  margin: 0 auto auto 10%;
-}
-
-.resMis {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 30px;
-  text-transform: none;
-  margin: auto;
-  max-width: 700px;
-  padding: 0 10%;
-}
-
-.resMain {
-  margin: 5% auto 5% 10%;
-}
-
-.resHd {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: -1.5px;
-  line-height: 24px;
-  text-transform: none;
-  margin: 0;
-}
-
-.resDate {
-  display: block;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 18px;
-  text-transform: none;
-  max-width: 700px;
-  margin: 0;
-  padding: 20px 10% 0px;
-}
-
-.resLgText {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: normal;
-  line-height: 36px;
-  text-transform: none;
-  max-width: 700px;
-  margin: 0;
-  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  height: 300px;
 }
 
 .resText {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 24px;
-  text-transform: none;
-  max-width: 700px;
-  margin: 0;
-  padding: 0 20% 20px;
+  display: block;
+  color: var(--color-senary);
 }
 
-@media only screen and (max-width: 680px) {
-  .ltContainer {
-    height: 93px;
-    width: 40%;
-  }
+.btn {
+  background-color: var(--color-quaternary);
+  color: var(--color-senary);
+  font-weight: bold;
+  border: 1px solid var(--color-quaternary);
+  width: 200px;
+  height: 40px;
+}
 
-  .resTitleText {
-    font-size: 36px;
-    letter-spacing: -1.5px;
-    line-height: 36px;
-  }
+.btn:hover span {
+  display: none;
+}
 
-  .resMis {
-    font-size: 16px;
-    line-height: 25px;
-  }
+.btn:hover {
+  background-color: var(--color-senary);
+  border: 1px solid var(--color-quaternary);
+}
 
-  .resHd {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .resDate {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  .resLgText {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .resText {
-    font-size: 16px;
-    line-height: 16px;
-  }
+.btn:hover:after {
+  color: var(--color-primary);
+  content: "＿φ(°-°=)";
+  letter-spacing: -1px;
+  font-size: 1em;
+  text-align: center;
 }

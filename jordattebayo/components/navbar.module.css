@@ -14,14 +14,14 @@
 
 .navLinkContainer {
   display: block;
-  color: #2d2d2d;
+  color: var(--color-primary);
   list-style: none;
 }
 
 .navLinkHome {
-  border: 1px solid #2d2d2d;
-  background-color: #2d2d2d;
-  color: #fff;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-senary);
   display: block;
   font-size: 24px;
   text-align: center;
@@ -33,9 +33,9 @@
 }
 
 .navLinkAbout {
-  border: 1px solid #2d2d2d;
-  background-color: #2d2d2d;
-  color: #fff;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-senary);
   display: block;
   font-size: 24px;
   text-align: center;
@@ -47,9 +47,9 @@
 }
 
 .navLinkGit {
-  border: 1px solid #2d2d2d;
-  background-color: #2d2d2d;
-  color: #fff;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-senary);
   display: block;
   font-size: 24px;
   text-align: center;
@@ -61,9 +61,9 @@
 }
 
 .navLinkProjects {
-  border: 1px solid #2d2d2d;
-  background-color: #2d2d2d;
-  color: #fff;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-senary);
   display: block;
   font-size: 24px;
   text-align: center;

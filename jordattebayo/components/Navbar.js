@@ -6,19 +6,19 @@ const Navbar = () => (
     <ul className={styles.navContainer}>
       <li className={styles.navLinkContainer}>
         <Link href="/">
-          <a className={styles.navLinkHome}>
+          <a className={styles.navLinkHome} tabIndex="0">
             <span>Home</span>
           </a>
         </Link>
       </li>
       <li className={styles.navLinkContainer}>
         <Link href="/about">
-          <a className={styles.navLinkAbout}>
+          <a className={styles.navLinkAbout} tabIndex="1">
             <span>About</span>
           </a>
         </Link>
       </li>
-      <li className={styles.navLinkContainer}>
+      <li className={styles.navLinkContainer} tabIndex="2">
         <a
           className={styles.navLinkGit}
           href="https://www.github.com/jordattebayo"
@@ -27,8 +27,8 @@ const Navbar = () => (
           <span>GitHub</span>
         </a>
       </li>
-      <li className={styles.navLinkContainer}>
-        <a className={styles.navLinkProjects} href="/projects">
+      <li className={styles.navLinkContainer} tabIndex="3">
+        <a className={styles.navLinkProjects} target="/#projects">
           <span>Projects</span>
         </a>
       </li>

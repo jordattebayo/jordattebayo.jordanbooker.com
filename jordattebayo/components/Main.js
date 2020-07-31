@@ -1,6 +1,8 @@
 import Resume from "../components/Resume";
 import styles from "./main.module.css";
 import ContactButton from "./ContactButton";
+import ThemeShape from "./ThemeShape";
+import Projectsholder from "./Projectsholder";
 
 export default function Home() {
   return (
@@ -9,19 +11,16 @@ export default function Home() {
         <h1 className={styles.introText}>Hello</h1>
         <div className={styles.introContainer}>
           <p className={styles.text}>
-            You made it. Happy you came! o(^▽^)o ! This is my front page. For
-            now there isn't much here but as I get time I'll update things.
-            Hopefully you'll come back and check it out!
-            <br />
-          </p>
-          <p className={styles.text}>
-            Currently I am seeking freelance and fulltime opportunities in Front
-            End Development. I have experience in HTML, CSS, JavaScript, React,
-            and NodeJS. For any questions at all feel free to reach out to me!
+            My name is Jordan, I'm a Front End Developer. <br />
+            <br /> My big dream is to create thoughtful, inclusive, and durable
+            web applications that help people. Feel free to check out some of my
+            projects I've made along my journey below.
           </p>
         </div>
       </div>
       <ContactButton />
+      <ThemeShape />
+      <Projectsholder />
       <Resume />
     </main>
   );

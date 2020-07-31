@@ -11,7 +11,7 @@ export default class ContactButton extends Component {
   }
 
   showEmail = () => {
-    this.setState({ buttonClicked: true });
+    this.setState((prevState) => ({ buttonClicked: !prevState.buttonClicked }));
   };
 
   render() {

@@ -8,14 +8,14 @@
 }
 
 .introText {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: var(--hd-font);
   font-size: 130px;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -6.5px;
   line-height: 130px;
   text-transform: none;
-  color: #f5dd42;
+  color: var(--color-secondary);
   margin-top: 25px;
 }
 
@@ -24,14 +24,14 @@
 }
 
 .text {
-  font-family: Esteban, Georgia, "Times New Roman", serif;
+  font-family: var(--main-font);
   font-size: 24px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
   line-height: 35px;
   text-transform: none;
-  color: #2d2d2d;
+  color: var(--color-primary);
   margin: auto;
   margin-bottom: 40px;
   max-width: 700px;

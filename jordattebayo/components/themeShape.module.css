@@ -5,29 +5,29 @@
 }
 
 .ltShape40 {
-  background-color: #2d2d2d;
+  background-color: var(--color-primary);
   width: 40%;
   height: 25%;
   margin-bottom: -1px;
 }
 
 .ltShape60 {
-  background-color: #2d2d2d;
+  background-color: var(--color-primary);
   width: 60%;
   height: 25%;
   margin-bottom: -1px;
 }
 
 .ltShape80 {
-  background-color: #2d2d2d;
+  background-color: var(--color-primary);
   width: 80%;
   height: 25%;
-  border: 1px solid #2d2d2d;
+  border: 1px solid var(--color-primary);
   margin-bottom: -1px;
 }
 
 .ltShape100 {
-  background-color: #2d2d2d;
+  background-color: var(--color-primary);
   width: 100%;
   height: 25%;
   margin-bottom: -1px;

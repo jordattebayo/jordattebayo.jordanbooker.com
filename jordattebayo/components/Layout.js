@@ -9,7 +9,7 @@ export default function Layout(props) {
     <div className={styles.container}>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,400&family=Roboto+Mono&display=swap"
           rel="stylesheet"
         />
         <title>Jordan Booker</title>

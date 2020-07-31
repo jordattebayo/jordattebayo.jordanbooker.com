@@ -1,11 +1,11 @@
 .footer {
   grid-area: footer;
   height: 150px;
-  background-color: #2d2d2d;
+  background-color: var(--color-primary);
 }
 
 .ftText {
-  font-family: Esteban, Georgia, "Times New Roman", serif;
+  font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
@@ -13,7 +13,7 @@
   letter-spacing: normal;
   line-height: 20px;
   text-transform: none;
-  color: #fff;
+  color: var(--color-senary);
 }
 
 @media only screen and (max-width: 680px) {
