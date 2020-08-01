@@ -1,9 +1,42 @@
-.pContainer {
-  height: 100px;
-  width: 100px;
+.container {
+  height: auto;
+  width: 100%;
+  background-color: var(--color-senary);
+  padding: 20px;
 }
 
-.pText {
+.titleText {
   font-size: 24px;
-  color: var(--color-senary);
+  color: var(--color-primary);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgLink {
+  display: inline-block;
+  background: black;
+  padding: 0;
+}
+
+.proImg {
+  width: 250px;
+  height: auto;
+}
+
+.proImg:hover {
+  opacity: 0.1;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.text {
+  font-size: 18px;
+  color: var(--color-primary);
 }

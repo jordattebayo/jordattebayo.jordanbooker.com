@@ -1,5 +1,6 @@
 .mainB {
   grid-area: main;
+  background-color: var(--color-primary);
 }
 
 .mainContainer {
@@ -15,8 +16,9 @@
   letter-spacing: -5.5px;
   line-height: 130px;
   text-transform: none;
-  color: var(--color-tertiary);
-  margin-top: 25px;
+  color: var(--color-senary);
+  padding-top: 25px;
+  margin-top: 0;
 }
 
 .introContainer {
@@ -29,20 +31,23 @@
 
 .text {
   font-family: var(--main-font);
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
   line-height: 35px;
   text-transform: none;
-  color: var(--color-primary);
+  color: var(--color-senary);
   margin: auto;
   margin-bottom: 40px;
   max-width: 700px;
 }
 
 .pCardContainer {
+  width: 100%;
   background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 680px) {
