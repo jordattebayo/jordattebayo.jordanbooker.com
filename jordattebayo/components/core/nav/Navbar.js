@@ -28,9 +28,11 @@ const Navbar = () => (
         </a>
       </li>
       <li className={styles.navLinkContainer} tabIndex="3">
-        <a className={styles.navLinkProjects} target="/#projects">
-          <span>Projects</span>
-        </a>
+        <Link href="/#projects">
+          <a className={styles.navLinkProjects}>
+            <span>Projects</span>
+          </a>
+        </Link>
       </li>
     </ul>
   </nav>

@@ -1,6 +1,5 @@
-import Head from "next/head";
-import Layout from "../components/Layout";
-import AboutPage from "../components/About";
+import Layout from "../components/core/layout/Layout";
+import AboutPage from "../components/about/About";
 
 export default function About() {
   return (

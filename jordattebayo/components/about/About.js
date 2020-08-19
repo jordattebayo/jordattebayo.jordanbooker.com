@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import ThemeShape from "./ThemeShape";
+import ThemeShape from "../core/themeShapes/ThemeShape";
 
 export default function AboutPage() {
   return (

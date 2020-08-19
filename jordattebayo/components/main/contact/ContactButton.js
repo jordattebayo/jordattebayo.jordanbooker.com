@@ -16,7 +16,7 @@ export default class ContactButton extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.btnContainer}>
         {this.state.buttonClicked ? (
           <div className={styles.contactText}>
             Email: jordan@jordanbooker.com
