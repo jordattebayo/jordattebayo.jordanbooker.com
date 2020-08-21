@@ -2,37 +2,103 @@ import ReactDOM from "react-dom";
 import styles from "./projectsholder.module.css";
 import ProjectCard from "./ProjectCard";
 
+const projectData = [
+  {
+    id: "1",
+    showing: "false",
+    title: "React Chart",
+    image:
+      "https://cdn.pixabay.com/photo/2020/06/18/07/56/railing-5312344_960_720.jpg",
+    role: "Developer",
+    difficulties: "Accurately ",
+    solution: "",
+    features: "Dynamically Builds Chart",
+    tech: "JavaScript, React, Emotion",
+  },
+  {
+    id: "2",
+    showing: "false",
+    title: "TBD",
+    image:
+      "https://cdn.pixabay.com/photo/2020/06/18/07/56/railing-5312344_960_720.jpg",
+    role: "Dev",
+    difficulties: "None",
+    solution: "Just smart",
+    features: "Only the best",
+    tech: "All",
+  },
+  {
+    id: "3",
+    showing: "false",
+    title: "TBD",
+    image:
+      "https://cdn.pixabay.com/photo/2020/06/18/07/56/railing-5312344_960_720.jpg",
+    role: "Dev",
+    difficulties: "None",
+    solution: "Just smart",
+    features: "Only the best",
+    tech: "All",
+  },
+  {
+    id: "4",
+    showing: "false",
+    title: "TBD",
+    image:
+      "https://cdn.pixabay.com/photo/2020/06/18/07/56/railing-5312344_960_720.jpg",
+    role: "Dev",
+    difficulties: "None",
+    solution: "Just smart",
+    features: "Only the best",
+    tech: "All",
+  },
+  {
+    id: "5",
+    showing: "false",
+    title: "TBD",
+    image:
+      "https://cdn.pixabay.com/photo/2020/06/18/07/56/railing-5312344_960_720.jpg",
+    role: "Dev",
+    difficulties: "None",
+    solution: "Just smart",
+    features: "Only the best",
+    tech: "All",
+  },
+];
 class Projectsholder extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  state = {
+    projects: [],
+  };
 
   componentDidMount() {
+    this.setState({ projects: [...this.state.projects, ...projectData] });
     this.showProjects();
   }
 
-  showProjects = () => {
-    const allProjects = [];
-    const { data } = this.props;
-    console.log(data);
-    for (let p of data) {
-      allProjects.push(
-        <ProjectCard
-          key={p.id}
-          title={p.title}
-          image={p.image}
-          role={p.role}
-          difficulties={p.difficulties}
-          solution={p.solution}
-          features={p.features}
-          tech={p.tech}
-        />
-      );
-    }
-    console.log(allProjects);
-    ReactDOM.render(allProjects, document.getElementById("pContainer"));
+  toggleProject = (id) => {
+    this.setState({
+      projects: this.props.projects.map((project) => {
+        if (project.id === id) {
+          project.showing = !project.showing;
+        }
+        return project;
+      }),
+    });
   };
 
+  showProjects = () => {
+    if (projects.length > 0) {
+      const allProjects = [];
+      const { projects } = this.state;
+      console.log(projects);
+      for (let p of projects) {
+        allProjects.push(
+          <ProjectCard key={p.id} toggleProject={this.toggleProject} data={p} />
+        );
+      }
+      console.log(allProjects);
+      ReactDOM.render(allProjects, document.getElementById("pContainer"));
+    }
+  };
   render() {
     return (
       <main className={styles.mainB}>
@@ -42,9 +108,9 @@ class Projectsholder extends React.Component {
           </a>
 
           <p className={styles.text}>
-            It has been a lot of fun converting my old projects into live ones
-            and putting them up for everyone to see. Please feel free to reach
-            out if you have any questions or just want to chat!
+            It has been a lot of fun refactoring my projects into live versions
+            for everyone to see. Please reach out if you have any questions or
+            just want to chat!
           </p>
         </div>
         <div id="pContainer" className={styles.pCardContainer}></div>
