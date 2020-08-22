@@ -1,56 +1,74 @@
 import styles from "./projectCard.module.css";
 
 class ProjectCard extends React.Component {
-  projectStyle = () => {
-    if (this.props) {
-      return {
-        width: "80%",
-        backgroundColor: "var(--color-senary)",
-        alignSelf: "center",
-        transition: "max-height 0.2s ease-out",
-      };
-    } else {
-      return {
-        width: "80%",
-        backgroundColor: "var(--color-senary)",
-        padding: "3% 5%",
-        margin: "2%",
-        alignSelf: "center",
-        maxHeight: "0",
-        overflow: "hidden",
-        transition: "max-height 0.2s ease-out",
-      };
-    }
+  constructor(props) {
+    super(props);
+
+    this.state = { showProject: false };
+  }
+
+  toggleProject = () => {
+    this.setState((prevState) => ({ showProject: !prevState.showProject }));
   };
 
   render() {
     const { data } = this.props;
-    console.log(data);
     return (
       <React.Fragment>
         <button
-          onClick={this.props.toggleProject.bind(this, data.id)}
-          className={styles.btn}
+          onClick={this.toggleProject}
+          className={this.state.showProject ? styles.btnM : styles.btn}
         >
           {data.title}
         </button>
-        <div className={this.projectStyle}>
-          <h3 className={styles.titleText}>{data.title}</h3>
-          <div className={styles.info}>
-            <a className={styles.imgLink}>
+        {this.state.showProject ? (
+          <div className={styles.container}>
+            <button onClick={this.toggleProject} className={styles.closeBtn}>
+              <svg className={styles.iconC}>
+                <line
+                  className={styles.iconC}
+                  x1="0"
+                  y1="0"
+                  x2="10"
+                  y2="10"
+                  lineCap="round"
+                />
+                <line
+                  className={styles.iconC}
+                  x1="0"
+                  y1="10"
+                  x2="10"
+                  y2="0"
+                  lineCap="round"
+                />
+              </svg>
+            </button>
+            <h3 className={styles.titleText}>{data.title}</h3>
+            <div className={styles.info}>
               <img className={styles.proImg} src={data.image} />
-            </a>
-            <div className={styles.textContainer}>
-              <p className={styles.text}>Role: {data.role}</p>
-              <p className={styles.text}>
-                Project Difficulties: {data.difficulties}
-              </p>
-              <p className={styles.text}>My Solution: {data.solution}</p>
-              <p className={styles.text}>Notable Features: {data.features}</p>
-              <p className={styles.text}>Technologies Used: {data.tech}</p>
+              <div className={styles.textContainer}>
+                <p className={styles.text}>Role: {data.role}</p>
+                <p className={styles.text}>
+                  Project Difficulties: {data.difficulties}
+                </p>
+                <p className={styles.text}>My Solution: {data.solution}</p>
+                <p className={styles.text}>Notable Features: {data.features}</p>
+                <p className={styles.text}>Technologies Used: {data.tech}</p>
+                <div className={styles.linkC}>
+                  <p>
+                    <a className={styles.link} href={data.live}>
+                      Live
+                    </a>
+                    |
+                    <a className={styles.link} href={data.git}>
+                      Github
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        ) : null}
       </React.Fragment>
     );
   }
