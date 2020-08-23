@@ -45,7 +45,9 @@ class ProjectCard extends React.Component {
             </button>
             <h3 className={styles.titleText}>{data.title}</h3>
             <div className={styles.info}>
-              <img className={styles.proImg} src={data.image} />
+              <div className={styles.imgC}>
+                <img className={styles.proImg} src={data.image} />
+              </div>
               <div className={styles.textContainer}>
                 <p className={styles.text}>Role: {data.role}</p>
                 <p className={styles.text}>
@@ -56,11 +58,25 @@ class ProjectCard extends React.Component {
                 <p className={styles.text}>Technologies Used: {data.tech}</p>
                 <div className={styles.linkC}>
                   <p>
-                    <a className={styles.link} href={data.live}>
-                      Live
-                    </a>
+                    {data.live.length > 1 ? (
+                      <a
+                        className={styles.link}
+                        href={data.live}
+                        target="_blank"
+                      >
+                        Live
+                      </a>
+                    ) : (
+                      <a
+                        className={styles.linkCrossed}
+                        href="#"
+                        target="_blank"
+                      >
+                        Live
+                      </a>
+                    )}
                     |
-                    <a className={styles.link} href={data.git}>
+                    <a className={styles.link} href={data.git} target="_blank">
                       Github
                     </a>
                   </p>

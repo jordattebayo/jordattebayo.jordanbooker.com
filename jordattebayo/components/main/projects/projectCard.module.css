@@ -12,11 +12,11 @@
   transition: 0.4s;
   border-radius: 4px;
   margin-bottom: 2%;
+  max-width: 750px;
 }
 
 .btn:hover {
   background-color: var(--color-tertiary);
-  color: var(--color-senary);
 }
 
 .btn:after {
@@ -25,10 +25,6 @@
   color: var(--color-primary);
   float: right;
   margin-left: 4%;
-}
-
-.btn:hover:after {
-  color: var(--color-senary);
 }
 
 .btnM {
@@ -109,9 +105,13 @@
   flex-direction: row;
 }
 
-.proImg {
+.imgC {
   width: 35%;
   height: auto;
+}
+
+.proImg {
+  width: 100%;
 }
 
 .textContainer {
@@ -135,7 +135,17 @@
   text-decoration: none;
 }
 
+.linkCrossed {
+  align-self: center;
+  text-decoration: line-through;
+}
+
 .link:hover {
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.linkCrossed:hover {
   color: var(--color-secondary);
   cursor: pointer;
 }
