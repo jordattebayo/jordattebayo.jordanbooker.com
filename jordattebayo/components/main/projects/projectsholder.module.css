@@ -1,0 +1,65 @@
+.mainB {
+  grid-area: main;
+  background-color: var(--color-primary);
+}
+
+.mainContainer {
+  margin: 0 10%;
+  margin-bottom: 25px;
+}
+
+.introText {
+  font-family: var(--hd-font);
+  font-size: 130px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -5.5px;
+  line-height: 130px;
+  text-transform: none;
+  color: var(--color-senary);
+  padding-top: 25px;
+  margin-top: 0;
+}
+
+.introContainer {
+  margin: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.text {
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-transform: none;
+  color: var(--color-senary);
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.pCardContainer {
+  width: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 680px) {
+  .introText {
+    font-size: 65px;
+    letter-spacing: -3.5px;
+    line-height: 65px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

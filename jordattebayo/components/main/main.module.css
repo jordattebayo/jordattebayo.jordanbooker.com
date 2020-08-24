@@ -1,0 +1,69 @@
+.mainB {
+  grid-area: main;
+}
+
+.mainContainer {
+  margin: 0 10%;
+  margin-bottom: 25px;
+}
+
+.introText {
+  font-family: var(--hd-font);
+  font-size: 130px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -6.5px;
+  line-height: 130px;
+  text-transform: none;
+  color: var(--color-secondary);
+  margin-top: 25px;
+}
+
+.introContainer {
+  margin: auto;
+}
+
+.altText {
+  color: var(--color-tertiary);
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-transform: none;
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.text {
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-transform: none;
+  color: var(--primary-color);
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .introText {
+    font-size: 65px;
+    letter-spacing: -3.5px;
+    line-height: 65px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
