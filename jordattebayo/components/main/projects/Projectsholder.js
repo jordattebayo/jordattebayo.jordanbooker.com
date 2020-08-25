@@ -26,7 +26,7 @@ class Projectsholder extends React.Component {
     {
       id: "2",
       title: "Travel Planner App",
-      image: "/plannerScreenshot.jpg",
+      image: "/plannerScreenshot.JPG",
       role: "Designer/Developer",
       difficulties: "API calls dependent on other API calls",
       solution:
@@ -40,7 +40,7 @@ class Projectsholder extends React.Component {
     {
       id: "3",
       title: "Evaluate News NLP",
-      image: "/languageScreenshot.jpg",
+      image: "/languageScreenshot.JPG",
       role: "Designer/Developer",
       difficulties:
         "Making sure that text submitted was valid to pass along to Aylien API",
@@ -56,7 +56,7 @@ class Projectsholder extends React.Component {
     {
       id: "4",
       title: "Weather Journal App",
-      image: "/weatherScreenshot.jpg",
+      image: "/weatherScreenshot.JPG",
       role: "Designer/Developer",
       difficulties: "Understanding API calls",
       solution: "Use tutorials available online to build personal API's",

@@ -24,29 +24,16 @@ class ProjectCard extends React.Component {
         {this.state.showProject ? (
           <div className={styles.container}>
             <button onClick={this.toggleProject} className={styles.closeBtn}>
-              <svg className={styles.iconC}>
-                <line
-                  className={styles.iconC}
-                  x1="0"
-                  y1="0"
-                  x2="10"
-                  y2="10"
-                  lineCap="round"
-                />
-                <line
-                  className={styles.iconC}
-                  x1="0"
-                  y1="10"
-                  x2="10"
-                  y2="0"
-                  lineCap="round"
-                />
-              </svg>
+              Close
             </button>
             <h3 className={styles.titleText}>{data.title}</h3>
             <div className={styles.info}>
               <div className={styles.imgC}>
-                <img className={styles.proImg} src={data.image} />
+                <img
+                  className={styles.proImg}
+                  src={data.image}
+                  alt="Screenshot of application"
+                />
               </div>
               <div className={styles.textContainer}>
                 <p className={styles.text}>Role: {data.role}</p>
@@ -77,7 +64,7 @@ class ProjectCard extends React.Component {
                     )}
                     |
                     <a className={styles.link} href={data.git} target="_blank">
-                      Github
+                      GitHub
                     </a>
                   </p>
                 </div>
