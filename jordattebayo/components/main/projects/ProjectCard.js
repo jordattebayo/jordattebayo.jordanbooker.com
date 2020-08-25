@@ -29,7 +29,11 @@ class ProjectCard extends React.Component {
             <h3 className={styles.titleText}>{data.title}</h3>
             <div className={styles.info}>
               <div className={styles.imgC}>
-                <img className={styles.proImg} src={data.image} />
+                <img
+                  className={styles.proImg}
+                  src={data.image}
+                  alt="Screenshot of application"
+                />
               </div>
               <div className={styles.textContainer}>
                 <p className={styles.text}>Role: {data.role}</p>

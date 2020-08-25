@@ -70,7 +70,7 @@ class Projectsholder extends React.Component {
     {
       id: "5",
       title: "Photo Blog",
-      image: "/blogScreenshot.JPG",
+      image: "/blogScreenshot.jpg",
       role: "Designer/Developer",
       difficulties: "Layout and design of photos within article",
       solution:
