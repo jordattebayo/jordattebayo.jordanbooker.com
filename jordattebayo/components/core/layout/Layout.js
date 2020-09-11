@@ -13,6 +13,15 @@ export default function Layout(props) {
           rel="stylesheet"
         />
         <title>Jordan Booker</title>
+        <meta
+          property="og:title"
+          content="A portfolio website for Jordan Booker"
+          key="title"
+        />
+        <meta
+          property="og:description"
+          content="Here you can find some of the projects I'm either proud of, found of, or unconditionally love."
+        />
       </Head>
       <Navbar />
       {props.children}

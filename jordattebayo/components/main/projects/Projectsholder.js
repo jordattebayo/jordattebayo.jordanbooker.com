@@ -26,7 +26,7 @@ class Projectsholder extends React.Component {
     {
       id: "2",
       title: "Travel Planner App",
-      image: "/plannerScreenshot.JPG",
+      image: "/travel-app.gif",
       role: "Designer/Developer",
       difficulties: "API calls dependent on other API calls",
       solution:
@@ -34,7 +34,7 @@ class Projectsholder extends React.Component {
       features:
         "Local storage paired with service workers to hold planned data even after user exits the browser",
       tech: "HTML, SASS, JavaScript, NodeJs, ExpressJS, Webpack, Babel",
-      live: "",
+      live: "http://jordattebayos-travel-planner.herokuapp.com/",
       git: "https://github.com/jordattebayo/Travel-Planner-App",
     },
     {
