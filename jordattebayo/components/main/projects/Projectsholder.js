@@ -10,6 +10,25 @@ class Projectsholder extends React.Component {
   projectData = [
     {
       id: "1",
+      title: "Lee® Indigood",
+      image: "/desktopLeeIndigoodMock.png",
+      role: "Developer",
+      difficulties:
+        "Creating responsive layouts between mobile, tablet, and desktop views.",
+      solution:
+        "Using Bootstrap's grid system to create responsive layouts based on popular viewport breakpoints.",
+      features: "Responsive layout",
+      tech: "Bootstrap, Salesfoce Commerce Cloud, HTML, CSS",
+      live: "",
+      git:"",
+      screenshots: {
+        desktop: "/desktopLeeIndigood.jpg",
+        tablet: "/tabletLeeIndigood.jpg",
+        mobile: "/mobileLeeIndigood.jpg",
+      }
+    },
+    {
+      id: "2",
       title: "React Line Chart",
       image: "/chartScreenshot.jpg",
       role: "Developer/Designer",
@@ -19,12 +38,12 @@ class Projectsholder extends React.Component {
         "Use a variety of sorting functions and algorithms to parse incoming data using as few fixed numbers as possible",
       features: "Dynamically builds line chart",
       tech: "JavaScript, React, Emotion",
-      live: "https://slate.host/_/stats",
+      live: "",
       git:
         "https://github.com/filecoin-project/slate/tree/main/components/stats",
     },
     {
-      id: "2",
+      id: "3",
       title: "Travel Planner App",
       image: "/travel-app.gif",
       role: "Designer/Developer",
@@ -38,7 +57,7 @@ class Projectsholder extends React.Component {
       git: "https://github.com/jordattebayo/Travel-Planner-App",
     },
     {
-      id: "3",
+      id: "4",
       title: "Evaluate News NLP",
       image: "/languageScreenshot.JPG",
       role: "Designer/Developer",
@@ -54,7 +73,7 @@ class Projectsholder extends React.Component {
         "https://github.com/jordattebayo/fend/tree/refresh-2019/projects/evaluate-news-nlp",
     },
     {
-      id: "4",
+      id: "5",
       title: "Weather Journal App",
       image: "/weatherScreenshot.JPG",
       role: "Designer/Developer",
@@ -68,7 +87,7 @@ class Projectsholder extends React.Component {
         "https://github.com/jordattebayo/fend/tree/refresh-2019/projects/weather-journal-app",
     },
     {
-      id: "5",
+      id: "6",
       title: "Photo Blog",
       image: "/blogScreenshot.JPG",
       role: "Designer/Developer",

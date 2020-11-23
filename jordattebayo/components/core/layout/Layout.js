@@ -20,7 +20,7 @@ export default function Layout(props) {
         />
         <meta
           property="og:description"
-          content="Here you can find some of the projects I'm either proud of, found of, or unconditionally love."
+          content="Here you can find some of the projects I'm either proud of, fond of, or unconditionally love."
         />
       </Head>
       <Navbar />

@@ -63,9 +63,50 @@ class ProjectCard extends React.Component {
                       </a>
                     )}
                     |
-                    <a className={styles.link} href={data.git} target="_blank">
-                      GitHub
-                    </a>
+                    {data.git.length > 1 ? (
+                      <a
+                        className={styles.link}
+                        href={data.live}
+                        target="_blank"
+                      >
+                        GitHub
+                      </a>
+                    ) : (
+                      <a
+                        className={styles.linkCrossed}
+                        href="#"
+                        target="_blank"
+                      >
+                        GitHub
+                      </a>
+                    )}
+                    {data.screenshots ? (
+                      <span>
+                        |<a
+                          className={styles.link}
+                          href={data.screenshots.desktop}
+                          download={data.screenshots.desktop.toString()}
+                        >
+                          Desktop Screenshot
+                        </a>|
+                          <a
+                          className={styles.link}
+                          href={data.screenshots.tablet}
+                          download={data.screenshots.tablet.toString()}
+                        >
+                          Tablet Screenshot
+                        </a>|
+                        <a
+                          className={styles.link}
+                          href={data.screenshots.mobile}
+                          download={data.screenshots.mobile.toString()}
+                        >
+                          Mobile Screenshot
+                        </a>
+                      </span>
+                    ) : (
+                      null
+                    )}
                   </p>
                 </div>
               </div>
