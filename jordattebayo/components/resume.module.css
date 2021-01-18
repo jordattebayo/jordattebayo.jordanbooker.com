@@ -1,0 +1,38 @@
+.resContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+
+.resText {
+  display: block;
+  color: var(--color-senary);
+}
+
+.btn {
+  background-color: var(--color-quaternary);
+  color: var(--color-senary);
+  font-weight: bold;
+  border: 1px solid var(--color-quaternary);
+  width: 200px;
+  height: 40px;
+}
+
+.btn:hover span {
+  display: none;
+}
+
+.btn:hover {
+  background-color: var(--color-senary);
+  border: 1px solid var(--color-quaternary);
+}
+
+.btn:hover:after {
+  color: var(--color-primary);
+  content: "＿φ(°-°=)";
+  letter-spacing: -1px;
+  font-size: 1em;
+  text-align: center;
+}

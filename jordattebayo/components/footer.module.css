@@ -1,0 +1,27 @@
+.footer {
+  grid-area: footer;
+  height: 150px;
+  padding: 5%;
+  margin-top: -1px;
+  margin-bottom: 1px;
+  background-color: var(--color-primary);
+}
+
+.ftText {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-transform: none;
+  color: var(--color-senary);
+}
+
+@media only screen and (max-width: 680px) {
+  .ftText {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

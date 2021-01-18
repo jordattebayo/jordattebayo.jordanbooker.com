@@ -1,3 +1,8 @@
-# Jordan Booker - Resume Website
+# Welcome to my home page's home page
 
-This website will serve as a personal blog and resume for my journey into the cyber world.
+I made this website with NextJS, a React Framework. 
+
+Here you can find projects I'm either fond or proud of, heck maybe both. As I clear new hurdles in programming I'll document or implement those ideas here. 
+
+Feel free to poke around and let me know what you think! 
+
