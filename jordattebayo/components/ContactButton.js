@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./contactbutton.module.css";
+import styles from "./contactbutton.module.sass";
 import { useSpring, animated } from "react-spring"
 
 export default function ContactButton() {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring"
 import Link from "next/link";
-import styles from "./navbar.module.css";
+import styles from "./navbar.module.sass";
 
 export default function Navbar () {
 

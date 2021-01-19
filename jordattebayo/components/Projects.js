@@ -1,5 +1,5 @@
 import { useState } from "react"
-import styles from "./projects.module.css";
+import styles from "./projects.module.sass";
 import Image from "next/image"
 
 function ProjectCard ({ data }) {
@@ -110,7 +110,7 @@ function ProjectCard ({ data }) {
 export default function Projects ({ projectData }) {
   return (
     <main className={styles.mainB}>
-      <div className={styles.mainContainer}>
+      <div className="hero-container">
         <a className={styles.link} id="projects">
           <h1 className={styles.introText}>Projects</h1>
         </a>

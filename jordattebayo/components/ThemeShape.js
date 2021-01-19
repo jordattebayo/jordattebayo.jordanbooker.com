@@ -1,4 +1,4 @@
-import styles from "./themeShape.module.css";
+import styles from "./themeShape.module.sass";
 
 export default function ThemeShape() {
   return (

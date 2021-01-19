@@ -1,5 +1,6 @@
 import axios from "axios"
 
+
 export default async (req, res) => {
     const { email } = req.body
   
@@ -17,7 +18,7 @@ export default async (req, res) => {
       return res.status(201).json({ error: null })
     } catch (error) {
       return res.status(400).json({
-        error: `Oop, something went wrong... Please email at jordan.m.booker@gmail.com and I'll manually add you to the list.`,
+        error: `Oop, something went wrong... Email me at jordan.m.booker@gmail.com and I'll get you added.`,
       }) 
     }
   }
