@@ -37,7 +37,7 @@ const _projectData = [
       "Use a variety of sorting functions and algorithms to parse incoming data using as few fixed numbers as possible",
     features: "Dynamically builds line chart",
     tech: "JavaScript, React, Emotion",
-    live: "",
+    live: "https://slate.host/_/system/line-chart",
     git:
       "https://github.com/filecoin-project/slate/tree/main/components/stats",
   },
